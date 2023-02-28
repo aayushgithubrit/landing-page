@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+height: 100%;
+width: 100%;
+background-color: #D0D4D5;
+/* position: relative; */
+
+}
+#nav{
+    height: 110px;
+    padding: 0px 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#nav img{
+    height: 37px;
+    margin-right: 110px;
+
+}
+ #nav-prt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  #nav-prt1 h4{
+    margin-right: 60px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+
+}
+#nav-prt2 i{ 
+    font-size: 26px;
+    font-weight: 500;
+    margin-right: 60px;
+}
+#content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100% - 110px);
+    /* there is a problem in heights soo we use a calc function */
+
+}
+#left{
+    width: 40%;
+    height: 100%;
+   padding: 120px 110px;
+   cursor: pointer;
+}
+#left h5{
+    margin-bottom: 25px;
+    font-size: 12px;
+    color: #676565;
+
+}
+#left h1{
+    margin-bottom: 55px;
+    font-size: 55px;
+   line-height: 50px;
+    text-transform: uppercase;
+}
+#left p{
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+#left button{
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 360px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-top-left-radius: 0px;
+
+}
+#right::-webkit-scrollbar{
+    display: none;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 70px;
+    white-space: nowrap;
+    overflow-x: auto;
+    cursor: pointer;
+
+}
+.elem{
+    height: 520px;
+    width: 360px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(93, 92, 92, 0.882);
+    display: inline-block;
+    margin-right: 20px;
+    
+
+}
+.elem img{
+    width: 100%;
+    position: absolute;
+    height: 60%;
+    top: 13%;
+    object-fit: cover;
+ 
+
+}
+.elem h4{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: #D0D4D5;
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.elem h5{
+    position: absolute;
+    bottom: 9%;
+    right: 0%;
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-size: 12px;
+}
